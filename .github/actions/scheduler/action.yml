@@ -1,0 +1,5 @@
+name: Comply Scheduler
+description: Run comply scheduler for your compliance repo
+runs:
+  image: "docker://strongdm/comply:latest"
+  entrypoint: comply scheduler

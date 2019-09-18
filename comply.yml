@@ -1,0 +1,5 @@
+name: Hecate Test
+filePrefix: Hecate-Test
+tickets:
+  github: {}
+approvedBranch: ""
