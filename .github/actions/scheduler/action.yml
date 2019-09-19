@@ -1,8 +1,8 @@
 name: Comply Scheduler
 description: Run comply scheduler for your compliance repo
 runs:
-  image: "docker://strongdm/comply:latest"
-  entrypoint: ./entrypoint.sh
+  using: "docker"
+  image: "Dockerfile"
 inputs:
   jira_username:
     required: false
