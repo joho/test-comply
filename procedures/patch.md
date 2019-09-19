@@ -1,6 +1,6 @@
 id: "patch"
 name: "Apply OS patches"
-cron: "0 0 0 15 \* \*"
+cron: "0 0 0 15 * *"
 
 ---
 
