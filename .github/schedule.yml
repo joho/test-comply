@@ -1,8 +1,11 @@
+name: Ticket Scheduler
+
 on:
   schedule:
     - cron: "0 8 * * *"
 
 jobs:
   scheduler:
+    runs-on: ubuntu-latest
     steps:
       - uses: ./.github/actions/scheduler
