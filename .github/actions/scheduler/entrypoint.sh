@@ -1,8 +1,5 @@
 #!/bin/bash
 
-date
-date +"%Z %z"
-
 cd $GITHUB_WORKSPACE
 
 if [ -n "$INPUT_JIRA_USERNAME" ]; then
@@ -15,6 +12,4 @@ if [ -n "$INPUT_JIRA_PASSWORD" ]; then
     sed -i "s/<JIRA_PASSWORD>/$INPUT_JIRA_PASSWORD/g" comply.yml
 fi
 
-echo $@
-
-comply ${@:2}
+comply $@
