@@ -1,8 +1,10 @@
 name: Ticket Scheduler
 
-on:
-  schedule:
-    - cron: "0 12 * * *"
+# on:
+#   schedule:
+#     - cron: "*/10 * * * *"
+
+on: push
 
 jobs:
   scheduler:
