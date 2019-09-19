@@ -15,4 +15,6 @@ if [ -n "$INPUT_JIRA_PASSWORD" ]; then
     sed -i "s/<JIRA_PASSWORD>/$INPUT_JIRA_PASSWORD/g" comply.yml
 fi
 
+echo $@
+
 comply ${@:2}
