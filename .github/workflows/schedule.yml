@@ -15,6 +15,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: ["scheduler"]
+          args: scheduler
           jira_username: ${{ secrets.JIRA_USERNAME }}
           jira_password: ${{ secrets.JIRA_PASSWORD }}
