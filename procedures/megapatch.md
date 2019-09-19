@@ -1,6 +1,6 @@
-id: "patch"
-name: "Apply OS patches"
-cron: "0 0 0 15 \* \*"
+id: "megapatch"
+name: "Apply OS patches (even more)"
+cron: "0 0 0 15 * *"
 
 ---
 

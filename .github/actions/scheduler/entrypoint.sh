@@ -1,5 +1,8 @@
 #!/bin/bash
 
+date
+date +"%Z %z"
+
 cd $GITHUB_WORKSPACE
 
 if [ -n "$INPUT_JIRA_USERNAME" ]; then
@@ -8,7 +11,7 @@ if [ -n "$INPUT_JIRA_USERNAME" ]; then
 fi
 
 if [ -n "$INPUT_JIRA_PASSWORD" ]; then
-    echo "Setting JIRA username"
+    echo "Setting JIRA password"
     sed -i "s/\<JIRA_PASSWORD\>/$INPUT_JIRA_PASSWORD/g" comply.yml
 fi
 
