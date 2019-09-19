@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: ./.github/actions/scheduler
+        run: scheduler
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
